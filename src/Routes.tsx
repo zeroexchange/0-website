@@ -18,6 +18,8 @@ export default function Routes() {
   return (
     <BrowserRouter>
       <ScrollToTop />
+      <div className="app-bg"></div>
+      <div className="darken-bg"></div>
       <Header />
       <Switch>
         <Route exact path={PublicRoutes.Home}>

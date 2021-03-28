@@ -7,7 +7,9 @@ const Hero = ({ goToSite }) => (
       <div className="hero-content column animated fadeInDownTiny d300 delay100">
         <img src="/zero-logo-text.png" alt="logo text white" />
         <h1>
-        Instant crypto swaps. Freezingly low fees.</h1>
+          Instant crypto swaps, freezingly low fees
+          <span> on the world's first Multi-DEX platform</span>
+        </h1>
         <ul className="button-list">
           <li className="button is-primary" onClick={() => goToSite('https://app.0.exchange')}>
             Launch App

@@ -3,6 +3,7 @@ import './styles.scss';
 import BottomList from './components/BottomList';
 import Hero from './components/Hero';
 import Layout from '../../layout/MainLayout';
+import LogosSection from './components/LogosSection';
 import React from 'react'
 
 export default function Home() {
@@ -15,10 +16,8 @@ export default function Home() {
     <Layout hasSnow={true}>
       <div className="container">
         <Hero goToSite={goToSite} />
+        <LogosSection />
         <BottomList goToSite={goToSite} />
-        <div className="beta">
-          Trading with Zero Exchange comes with risk, please do your research.
-        </div>
       </div>
     </Layout >
   )
