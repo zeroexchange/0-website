@@ -8,7 +8,7 @@ const Hero = ({ goToSite }) => (
         <img src="/zero-logo-text.png" alt="logo text white" />
         <h1>
           Instant crypto swaps, freezingly low fees
-          <span> on the world's first Multi-DEX platform</span>
+          <span className="block"> on the world's first <span className="purple">Multi-DEX</span> platform</span>
         </h1>
         <ul className="button-list">
           <li className="button is-primary" onClick={() => goToSite('https://app.0.exchange')}>
