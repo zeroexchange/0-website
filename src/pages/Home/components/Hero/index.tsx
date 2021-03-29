@@ -7,7 +7,7 @@ const Hero = ({ goToSite }) => (
       <div className="hero-content column animated fadeInDownTiny d300 delay100">
         <img src="/zero-logo-text.png" alt="logo text white" />
         <h1>
-          Instant crypto swaps, freezingly low fees
+          Instant crypto swaps and low fees
           <span className="block"> on the world's first <span className="purple">Multi-DEX</span> platform</span>
         </h1>
         <ul className="button-list">
