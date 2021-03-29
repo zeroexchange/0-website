@@ -27,7 +27,7 @@ code {
   z-index: 0;
   background: url('../src/assets/images/space-bg.png') no-repeat;
   background-size: cover;
-  opacity: .5;
+  opacity: 1;
 }
 
 .darken-bg {
