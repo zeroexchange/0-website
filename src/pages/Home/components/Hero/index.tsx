@@ -16,7 +16,7 @@ const Hero = ({ goToSite }) => (
           <FontAwesomeIcon icon="rocket" size="sm" />
           </li>
           <li className="text-link blue"
-            onClick={() => goToSite('https://blog.0.exchange')}>
+            onClick={() => goToSite('https://medium.com/@OfficialZeroDex/')}>
             Read Our Blog
           </li>
         </ul>
