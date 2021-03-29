@@ -80,7 +80,7 @@ export default function Header(props) {
 
         { mobileMenuOpen &&
           <ul className="mobile-menu animated fadeInUpTiny d250 is-hidden-desktop">
-            <li onClick={() => goToSite("/0_Whitepaper_Final.pdf")}
+            <li onClick={() => goToSite("/ZEROWhitepaperUpdated.pdf")}
               className={`${pathname === '/learn-more' ? 'active' : ''}`}>
               Whitepaper
             </li>
