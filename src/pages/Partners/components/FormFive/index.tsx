@@ -26,9 +26,6 @@ export default function FormFive({ partnerForm, onHandleClick, onHandleBack }) {
   }
 
   const [futureChains, setFutureChains] = useState(partnerForm.futureChains || null);
-  const onSetFutureChains = (val) => {
-    setFutureChains(val)
-  }
 
   const handleBack = () => {
     onHandleBack();
