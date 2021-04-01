@@ -52,10 +52,9 @@ export default function Header(props) {
           </div>
 
           <ul className="link-list">
-            <li className="is-hidden-touch">
-              <a href='mailto:hello@0.exchange'>
-                Contact Us
-              </a>
+            <li className="is-hidden-touch pink" onClick={() => handleClick('/partners')}>
+              Launch Your Token
+              <FontAwesomeIcon icon="bolt" size="sm" />
             </li>
             <li onClick={() => goToSite("/0_Whitepaper_Final.pdf")}
               className={`is-hidden-touch ${pathname === '/learn-more' ? 'active' : ''}`}>
@@ -87,11 +86,6 @@ export default function Header(props) {
             <li onClick={() => goToSite("/0_Liquidity_Mining.pdf")}
               className={`${pathname === '/learn-more' ? 'active' : ''}`}>
               Liquidity Mining
-            </li>
-            <li>
-              <a href='mailto:hello@0.exchange'>
-                Contact Us
-              </a>
             </li>
             <li onClick={() => goToSite("https://app.0.exchange")}>
               <FontAwesomeIcon icon="rocket" size="sm" />

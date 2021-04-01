@@ -2,6 +2,7 @@ import './app.scss';
 
 import {
   faBars,
+  faBolt,
   faCheck,
   faCoins,
   faEnvelope,
@@ -33,6 +34,7 @@ library.add(
   faBars,
   faTimes,
   faGift,
+  faBolt,
 )
 
 export default function App() {

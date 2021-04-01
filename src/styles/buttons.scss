@@ -26,3 +26,26 @@
     filter: brightness(.9);
   }
 }
+
+.button.is-gradient {
+  background: linear-gradient(116.27deg, #B368FC 6.4%, #6752F7 100%);
+  color: white;
+  text-align: center;
+  display: block;
+  &:hover {
+    color: white;
+    filter: brightness(.9);
+  }
+}
+
+.button.is-outline {
+  background: rgba(255,255,255,.1);
+  border: 1px solid rgba(255,255,255,.5);
+  color: white;
+  text-align: center;
+  display: block;
+  &:hover {
+    color: white;
+    filter: brightness(.9);
+  }
+}
