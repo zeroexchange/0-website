@@ -8,6 +8,10 @@ const H3 = styled.div`
   font-size: 2rem;
   text-align: center;
   padding: 2rem;
+  @media (max-width: 764px) {
+    color: #fff;
+    font-size: 1.25rem;
+  }
 `
 
 export default function FormEnd({ partnerForm }) {

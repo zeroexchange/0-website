@@ -52,7 +52,7 @@ export default function FormSeven({ partnerForm, onHandleClick, onHandleBack }) 
         value={contactEmail}
       />
       <div style={{ display: 'flex', flexDirection: 'row' }} className="mt-6">
-        <button className="button is-outline" onClick={() => handleBack()}>Back</button>
+        <button className="button is-outline purple" onClick={() => handleBack()}>Back</button>
         <button className="button is-gradient is-next" onClick={() => handleClick()}>Submit</button>
       </div>
     </>)
