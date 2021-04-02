@@ -32,6 +32,7 @@ const FormContainer = styled.div`
 `
 export default function PartnersPage() {
 
+  const emailURL = 'https://prod-44.eastus2.logic.azure.com:443/workflows/1756218e802e427aafde6c1b01ea9913/triggers/manual/paths/invoke?api-version=2016-10-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=mhkGIWPGB6EVx4Sw-yMp0Z2b5FfCqEApXFD73J0nb7E'
   const [formStep, setFormStep] = useState(0);
   const [partnerForm, setPartnerForm] = useState({});
 
@@ -51,7 +52,16 @@ export default function PartnersPage() {
   }
 
   if (formStep === 7) {
-    //
+    setFormStep(8);
+    fetch(emailURL, {
+      method: 'POST',
+      headers: { 'content-type': 'application/json', accept: 'application/json' },
+      body: JSON.stringify(partnerForm)
+    }).then((res) => {
+      //
+    }).catch(() => {
+      //
+    })
   }
 
   return (
@@ -81,7 +91,7 @@ export default function PartnersPage() {
           { formStep === 6 &&
             <FormSeven partnerForm={partnerForm} onHandleClick={handleClick} onHandleBack={handleBack} />
           }
-          { formStep === 7 &&
+          { formStep > 6 &&
             <FormEnd partnerForm={partnerForm} />
           }
         </FormContainer>

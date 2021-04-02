@@ -25,14 +25,14 @@ export default function FormFive({ partnerForm, onHandleClick, onHandleBack }) {
     }
   }
 
-  const [futureChains, setFutureChains] = useState(partnerForm.futureChains || null);
+  const [futureChains, setFutureChains] = useState(partnerForm.futureChains || '');
 
   const handleBack = () => {
     onHandleBack();
   }
 
   const handleClick = () => {
-    if (blockchains.length === 0 || !futureChains ) return;
+    if (blockchains.length === 0 || futureChains.length === 0 ) return;
     onHandleClick({ blockchains, futureChains })
   }
 

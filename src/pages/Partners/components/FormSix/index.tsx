@@ -13,32 +13,32 @@ const FormLabel = styled.div`
 
 export default function FormSix({ partnerForm, onHandleClick, onHandleBack }) {
 
-  const [website, setWebsite] = useState(partnerForm.website || null);
+  const [website, setWebsite] = useState(partnerForm.website || '');
   const handleWebsite = (input) => {
     const val = input.target.value;
     setWebsite(val);
   }
 
-  const [blog, setBlog] = useState(partnerForm.blog || null);
+  const [blog, setBlog] = useState(partnerForm.blog || '');
   const handleBlog = (input) => {
     const val = input.target.value;
     setBlog(val);
   }
 
-  const [telegramGroup, setTelegramGroup] = useState(partnerForm.telegramGroup || null);
+  const [telegramGroup, setTelegramGroup] = useState(partnerForm.telegramGroup || '');
   const handleTelegramGroup = (input) => {
     const val = input.target.value;
     setTelegramGroup(val);
   }
 
-  const [telegramHandle, setTelegramHandle] = useState(partnerForm.telegramHandle || null);
+  const [telegramHandle, setTelegramHandle] = useState(partnerForm.telegramHandle || '');
   const handleTelegramHandle = (input) => {
     const val = input.target.value;
     setTelegramHandle(val);
   }
 
   const handleClick = () => {
-    if (!website || !blog || !telegramGroup || !telegramHandle) return;
+    if (website.length === 0 || blog.length === 0 || telegramGroup.length === 0 || telegramHandle.length === 0) return;
     onHandleClick({ website, blog, telegramGroup, telegramHandle })
   }
 

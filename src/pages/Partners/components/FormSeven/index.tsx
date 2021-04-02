@@ -13,20 +13,20 @@ const FormLabel = styled.div`
 
 export default function FormSeven({ partnerForm, onHandleClick, onHandleBack }) {
 
-  const [contactName, setContactName] = useState(partnerForm.contactName || null);
+  const [contactName, setContactName] = useState(partnerForm.contactName || '');
   const handleContactName = (input) => {
     const val = input.target.value;
     setContactName(val);
   }
 
-  const [contactEmail, setContactEmail] = useState(partnerForm.contactEmail || null);
+  const [contactEmail, setContactEmail] = useState(partnerForm.contactEmail || '');
   const handleContactEmail = (input) => {
     const val = input.target.value;
     setContactEmail(val);
   }
 
   const handleClick = () => {
-    if (!contactName || !contactEmail) return;
+    if (contactName.length === 0 || contactEmail.length === 0) return;
     onHandleClick({ contactName, contactEmail })
   }
 

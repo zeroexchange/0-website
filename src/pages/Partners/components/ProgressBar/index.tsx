@@ -51,7 +51,7 @@ export default function ProgressBar({ formStep }) {
     if (formStep === 6) {
       return '95%';
     }
-    if (formStep === 7) {
+    if (formStep > 6) {
       return '100%';
     }
   }

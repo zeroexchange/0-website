@@ -35,6 +35,7 @@ export default function Header(props) {
   });
 
   const handleClick = (str) => {
+    setMobileMenuOpen(false);
     history.push(str);
   };
 
@@ -79,6 +80,10 @@ export default function Header(props) {
 
         { mobileMenuOpen &&
           <ul className="mobile-menu animated fadeInUpTiny d250 is-hidden-desktop">
+            <li className="pink" onClick={() => handleClick('/partners')}>
+              Launch Your Token
+              <FontAwesomeIcon icon="bolt" size="sm" style={{ marginLeft: '6px'}} />
+            </li>
             <li onClick={() => goToSite("/ZEROWhitepaperUpdated.pdf")}
               className={`${pathname === '/learn-more' ? 'active' : ''}`}>
               Whitepaper

@@ -13,17 +13,17 @@ const FormLabel = styled.div`
 
 export default function FormThree({ partnerForm, onHandleClick, onHandleBack }) {
 
-  const [projectStatus, setProjectStatus] = useState(partnerForm.projectStatus || null);
+  const [projectStatus, setProjectStatus] = useState(partnerForm.projectStatus || '');
   const onSetProjectStatus = (val) => {
     setProjectStatus(val)
   }
 
-  const [teamStatus, setTeamStatus] = useState(partnerForm.teamStatus || null);
+  const [teamStatus, setTeamStatus] = useState(partnerForm.teamStatus || '');
   const onSetTeamStatus = (val) => {
     setTeamStatus(val)
   }
 
-  const [auditStatus, setAuditStatus] = useState(partnerForm.auditStatus || null);
+  const [auditStatus, setAuditStatus] = useState(partnerForm.auditStatus || '');
   const onSetAuditStatus = (val) => {
     setAuditStatus(val)
   }
@@ -33,7 +33,7 @@ export default function FormThree({ partnerForm, onHandleClick, onHandleBack }) 
   }
 
   const handleClick = () => {
-    if (!teamStatus || !projectStatus || !auditStatus ) return;
+    if (teamStatus.length === 0 || projectStatus.length === 0 || auditStatus.length === 0 ) return;
     onHandleClick({ teamStatus, projectStatus, auditStatus })
   }
 

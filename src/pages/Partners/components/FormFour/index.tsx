@@ -13,12 +13,12 @@ const FormLabel = styled.div`
 
 export default function FormFour({ partnerForm, onHandleClick, onHandleBack }) {
 
-  const [mintStatus, setMintStatus] = useState(partnerForm.mintStatus || null);
+  const [mintStatus, setMintStatus] = useState(partnerForm.mintStatus || '');
   const onSetMintStatus = (val) => {
     setMintStatus(val)
   }
 
-  const [liquidityLock, setLiquidityLock] = useState(partnerForm.liquidityLock || null);
+  const [liquidityLock, setLiquidityLock] = useState(partnerForm.liquidityLock || '');
   const onSetLiquidityLock = (val) => {
     setLiquidityLock(val)
   }
@@ -28,7 +28,7 @@ export default function FormFour({ partnerForm, onHandleClick, onHandleBack }) {
   }
 
   const handleClick = () => {
-    if (!mintStatus || !liquidityLock ) return;
+    if (mintStatus.length === 0 || liquidityLock.length === 0 ) return;
     onHandleClick({ mintStatus, liquidityLock })
   }
 
