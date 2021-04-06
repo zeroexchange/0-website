@@ -57,7 +57,7 @@ export default function Header(props) {
               Launch Your Token
               <FontAwesomeIcon icon="bolt" size="sm" />
             </li>
-            <li onClick={() => goToSite("/0_Whitepaper_Final.pdf")}
+            <li onClick={() => goToSite("https://0exchangestatic.blob.core.windows.net/whitepaper/0Whitepaper.pdf")}
               className={`is-hidden-touch ${pathname === '/learn-more' ? 'active' : ''}`}>
               Whitepaper
             </li>
@@ -84,7 +84,7 @@ export default function Header(props) {
               Launch Your Token
               <FontAwesomeIcon icon="bolt" size="sm" style={{ marginLeft: '6px'}} />
             </li>
-            <li onClick={() => goToSite("/ZEROWhitepaperUpdated.pdf")}
+            <li onClick={() => goToSite("https://0exchangestatic.blob.core.windows.net/whitepaper/0Whitepaper.pdf")}
               className={`${pathname === '/learn-more' ? 'active' : ''}`}>
               Whitepaper
             </li>
