@@ -11,12 +11,13 @@
   z-index: 10000;
   transition: all 0.2s ease-in-out;
   &.sticky {
-    background: $darkpurple
+    background: $darkpurple;
+    height: 80px;
   }
 }
 
 .header-container {
-  height: 180px;
+  height: 100%;
   width: 100%;
   display: flex;
   align-items: center;
@@ -70,7 +71,7 @@
 .mobile-menu {
   position: absolute;
   right: 0;
-  top: 120px;
+  top: 80px;
   width: 189px;
   min-height: 190px;
   background: linear-gradient(120.33deg, #2c3168 -83.67%, #0e1130 151.81%);
