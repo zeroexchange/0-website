@@ -38,7 +38,7 @@ const Footer = () => {
             <a href="https://coinmarketcap.com/currencies/zero-exchange/" target="_blank">coinmarketcap</a>
           </li>
           <li>
-            <a href="#" target="_blank">extols</a>
+            <a href="https://www.dextools.io/app/uniswap/pair-explorer/0x40f0e70a7d565985b967bcdb0ba5801994fc2e80" target="_blank">dextools</a>
           </li>
           <li>
             <a href="https://github.com/zeroexchange" target="_blank">github</a>
