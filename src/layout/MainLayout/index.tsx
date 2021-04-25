@@ -9,11 +9,13 @@ const LayoutContainer = styled.div`
   display: flex;
   flex-direction: column;
   padding-top: 80px;
+  position: relative;
+  z-index: 100;
 `
 
 const MainLayout = ({ hasSnow, children }) => {
   return (
-    <LayoutContainer className="darkblue-bg">
+    <LayoutContainer>
       <main id="Main" style={{ flexGrow: 1 }}>
         {children}
       </main>

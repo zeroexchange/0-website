@@ -1,14 +1,14 @@
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { BrowserRouter, Route, Switch } from "react-router-dom";
 
-import Header from './layout/Header';
-import HomePage from './pages/Home';
-import PartnersPage from './pages/Partners';
-import React from 'react';
-import ScrollToTop from './shared/components/ScrollToTop';
+import Header from "./layout/Header";
+import HomePage from "./pages/Home";
+import PartnersPage from "./pages/Partners";
+import React from "react";
+import ScrollToTop from "./shared/components/ScrollToTop";
 
 export enum PublicRoutes {
-  Home = '/',
-  Partners = '/partners',
+  Home = "/",
+  Partners = "/partners",
 }
 
 export default function Routes() {
@@ -27,5 +27,5 @@ export default function Routes() {
         </Route>
       </Switch>
     </BrowserRouter>
-  )
+  );
 }

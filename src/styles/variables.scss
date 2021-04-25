@@ -1,9 +1,12 @@
 // Set colors
 $blue: #6752F7;
 $darkblue: #111;
-
+$darkbg: #161A40;
+$main: #FDFAFF;
+$secondary: #B3A8FF;
+$lightpurple: #a7b1f4;
 // Bulma's global variables
-$family-sans-serif: 'Roboto', sans-serif;
+$family-sans-serif: 'Poppins', sans-serif;
 $white-opaq: rgba(255,255,255,.15);
 $primary: $blue;
 $link: $blue;
@@ -20,7 +23,7 @@ $border-radius: 12px;
 $purple: #C571F4;
 $lightGreen: #1EF7E7;
 $pink: #B368FC;
-
+$darkpurple: #12041d;
 .primary-color {
   color: $blue;
 }
