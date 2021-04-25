@@ -1,10 +1,10 @@
 import "./styles.scss";
 
 import BottomList from "./components/BottomList";
+import Carousel from "./components/Carousel";
+import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import Layout from "../../layout/MainLayout";
-import Footer from "./components/Footer";
-import Carousel from "./components/Carousel";
 
 export default function Home() {
   const goToSite = (str) => {
@@ -15,8 +15,8 @@ export default function Home() {
     <Layout hasSnow={true}>
       <div className="container">
         <Hero goToSite={goToSite} />
+        <BottomList goToSite={goToSite} />
       </div>
-      <BottomList goToSite={goToSite} />
       <Carousel />
       <Footer />
     </Layout>

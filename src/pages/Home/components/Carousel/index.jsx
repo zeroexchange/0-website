@@ -1,4 +1,5 @@
 import "./styles.scss";
+
 import { Component } from "react";
 import Slider from "react-slick";
 
@@ -47,7 +48,7 @@ export default class Carousel extends Component {
       ],
     };
     return (
-      <div className="carousel">
+      <div className="carousel animated fadeInDownTiny d300 delay250">
         <h5>Our Partners</h5>
         <div className="carousel-wrap">
           <div className="arrow-left arrow" onClick={this.previous}>

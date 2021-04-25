@@ -162,7 +162,9 @@
     justify-content: center;
     align-items: center;
     @media screen and (max-width: 550px) {
-      margin: 10px 1.5rem;
+      width: 34px;
+      height: 34px;
+      margin: 10px 1rem;
     }
     img {
       width: 60px;

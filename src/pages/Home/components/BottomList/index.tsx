@@ -1,7 +1,7 @@
 import "./styles.scss";
 
 const BottomList = ({ goToSite }) => (
-  <>
+  <div className="animated fadeInDownTiny d300 delay200">
     <h4 className="support-chain">Supported Chains</h4>
     <ul className="bottom-list">
       <li>
@@ -127,7 +127,7 @@ const BottomList = ({ goToSite }) => (
         </svg>
       </li>
     </ul>
-  </>
+  </div>
 );
 
 export default BottomList;

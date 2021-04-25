@@ -8,7 +8,7 @@ const LayoutContainer = styled.div`
   max-height: 100%;
   display: flex;
   flex-direction: column;
-  padding-top: 80px;
+  padding-top: 20px;
   position: relative;
   z-index: 100;
 `

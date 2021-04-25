@@ -1,11 +1,11 @@
 import "./styles.scss";
 
-import { useEffect, useState } from "react";
-import { useHistory, useLocation } from "react-router-dom";
 import {
   BarIcon,
   CloseIcon,
 } from "../../pages/Home/components/MenuIcons/index";
+import { useEffect, useState } from "react";
+import { useHistory, useLocation } from "react-router-dom";
 
 export default function Header() {
   const history = useHistory();
@@ -46,14 +46,14 @@ export default function Header() {
   return (
     <div
       id="Header"
-      className={`animated fadeInDownTiny d300 ${stickyHeader || mobileMenuOpen ? "sticky" : ""}`}
+      className={`animated fadeInDownTiny d300 ${stickyHeader ? "sticky" : ""}`}
     >
       <div className="container">
         <div className="header-container">
-          <div className="logo" onClick={() => handleClick("/")}>
+          <div className="header-logo" onClick={() => handleClick("/")}>
             <svg
-              width="45"
-              height="46"
+              width="50"
+              height="50"
               viewBox="0 0 45 46"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
@@ -79,7 +79,7 @@ export default function Header() {
 
           <ul className="link-list">
             <li
-              onClick={() => goToSite("/partners")}
+              onClick={() => handleClick("/partners")}
               className="is-hidden-touch"
             >
               Launch your token

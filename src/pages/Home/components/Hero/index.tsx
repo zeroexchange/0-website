@@ -69,7 +69,7 @@ const Hero = ({ goToSite }) => (
         </li>
       </ul>
     </div>
-    <div className="relative-wrapper-img animated fadeInDownTiny d300 delay100">
+    <div className="relative-wrapper-img animated fadeInDownTiny d300 delay150">
       <div className="devices-img">
       <img src="/devices.png" alt="Devices" />
       </div>
