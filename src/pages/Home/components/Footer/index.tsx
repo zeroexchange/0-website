@@ -32,7 +32,7 @@ const Footer = () => {
         </div>
         <ul>
           <li>
-            <a href="https://www.coingecko.com/en/coins/0-exchange" target="_blank">coingecko.com</a>
+            <a href="https://www.coingecko.com/en/coins/0-exchange" target="_blank">coingecko</a>
           </li>
           <li>
             <a href="https://coinmarketcap.com/currencies/zero-exchange/" target="_blank">coinmarketcap</a>
