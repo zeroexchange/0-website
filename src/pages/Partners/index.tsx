@@ -23,7 +23,7 @@ const FormContainer = styled.div`
   border: 2px solid #6752F7;
   border-radius: 30px;
   margin: 1rem auto;
-  background: darken(#151943, 5%);
+  background: rgba(0,0,0,.25);
   margin-bottom: 3rem;
   transition: all .3s ease-in-out;
   &.done {
