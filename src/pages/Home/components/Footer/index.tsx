@@ -43,6 +43,18 @@ const Footer = () => {
           <li>
             <a href="https://github.com/zeroexchange" target="_blank" rel="noreferrer">github</a>
           </li>
+          <li>
+            <a href="https://www.facebook.com/ZeroExchange-105556548092263" target="_blank" rel="noreferrer">facebook</a>
+          </li>
+          <li>
+            <a href="https://twitter.com/officialzerodex" target="_blank" rel="noreferrer">twitter</a>
+          </li>
+          <li>
+            <a href="https://discord.gg/XtZTNVTX5T" target="_blank" rel="noreferrer">discord</a>
+          </li>
+          <li>
+            <a href="https://t.me/ZeroExchangeCommunity" target="_blank" rel="noreferrer">telegram</a>
+          </li>
         </ul>
       </div>
     </footer>
