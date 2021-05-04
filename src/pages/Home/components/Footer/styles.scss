@@ -16,6 +16,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    @media screen and (max-width: 1215px) {
+      justify-content: space-evenly;
+      width: 100%;
+      gap: 8px;
+    }
 
     li {
       margin-right: 57px;
@@ -23,8 +28,8 @@
       &:last-child {
         margin-right: 0;
       }
-      @media screen and (max-width: 550px) {
-        margin-right: 20px;
+      @media screen and (max-width: 1215px) {
+        margin-right: 0px;
       }
 
       a {
@@ -56,7 +61,7 @@
   top: 50%;
   transform: translateY(-50%);
   left: 0;
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1215px) {
     display: none;
   }
 }

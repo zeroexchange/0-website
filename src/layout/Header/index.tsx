@@ -101,7 +101,7 @@ export default function Header() {
 
         {mobileMenuOpen && (
           <ul className="mobile-menu animated fadeInUpTiny d250">
-            <li onClick={() => goToSite("/blog")}>Blog</li>
+            <li onClick={() => goToSite("https://medium.com/@OfficialZeroDex/")}>Blog</li>
             <li
               onClick={() => goToSite("https://0exchangestatic.blob.core.windows.net/whitepaper/0Whitepaper.pdf")}
               className={`${pathname === "/learn-more" ? "active" : ""}`}
