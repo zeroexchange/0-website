@@ -43,7 +43,10 @@
   width: 100%;
   height: 80px;
   margin: 15px auto;
-  @include until($desktop) {
+  @media screen and (max-width: 1024px) {
+    max-width: 600px;
+  }
+  @media screen and (max-width: 768px) {
     max-width: 300px;
   }
 }
@@ -54,6 +57,9 @@
   left: -15px;
   top: 45%;
   transform: translateY(-50%);
+  @media screen and (max-width: 480px) {
+    left: 5px;
+  }
 }
 
 .arrow-right {
@@ -62,6 +68,9 @@
   right: -15px;
   top: 45%;
   transform: translateY(-50%);
+  @media screen and (max-width: 480px) {
+    right: 5px;
+  }
 }
 
 .slider-wrap {
