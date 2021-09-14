@@ -38,5 +38,7 @@ library.add(
 )
 
 export default function App() {
-  return (<Routes></Routes>)
+  window.location.href = 'https://relaychain.com';
+  //return (<Routes></Routes>)
+  return (<></>)
 }
